@@ -6,7 +6,10 @@
 }
 
 :root {
-  --bg-color: #333;
+  --bg-color-500: #212121;
+  --bg-color-400: #323232;
+  --primary-color-500: #0D7377;
+  --primary-color-400: #14FFEC;
   --color: #fff;
   --transition: all 300ms ease-in-out;
 }
@@ -18,7 +21,7 @@ navbar
 .navbar {
   height: 6rem;
   width: 100%;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-500);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +44,7 @@ navbar
   color: var(--color);
   text-transform: uppercase;
   font-size: 1.5rem;
-  background-image: linear-gradient(to top, #333 0%, #fff 100%);
+  background-image: linear-gradient(to top, var(--bg-color-500) 0%, #EEEEEE 100%);
   -moz-background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -65,7 +68,10 @@ navbar
 
 .nav-link {
   text-decoration: none;
-  color: var(--color);
+  color: var(--primary-color-500);
+  color: #C8B6E2;
+  color: #A8A4CE;
+  color: #fff;
   height: 100%;
   width: 100%;
   display: flex;
@@ -92,7 +98,7 @@ navbar
     top: -1000px;
     opacity: 0;
     left: 0;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-500);
     gap: 0;
     font-size: 1rem;
     transition: all 500ms ease-in-out;
@@ -138,6 +144,9 @@ end of navbar
 navbar
 ---------*/
 
-
+.home {
+  height: calc(100vh - 6rem);
+  background-color: var(--bg-color-400);
+}
 
 
