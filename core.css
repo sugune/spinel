@@ -22,6 +22,7 @@ navbar
   height: 6rem;
   width: 100%;
   background-color: var(--bg-color-500);
+  background-image: linear-gradient(to top, var(--bg-color-400) 0%, var(--bg-color-500));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,6 +100,7 @@ navbar
     opacity: 0;
     left: 0;
     background-color: var(--bg-color-500);
+    background-image: linear-gradient(to bottom, var(--bg-color-400) 0%, var(--bg-color-500));
     gap: 0;
     font-size: 1rem;
     transition: all 500ms ease-in-out;
@@ -147,6 +149,39 @@ navbar
 .home {
   height: calc(100vh - 6rem);
   background-color: var(--bg-color-400);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.87) 0%, rgba(0, 0, 0, 0.8) 100%), url('./images/poster.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.home h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  background-image: linear-gradient(to top, var(--primary-color-500) 0%, #fff 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  border-bottom: 1px solid var(--primary-color-500);
+  margin-bottom: 2rem;
+}
+
+.home p {
+ font-size: .8rem;
+ font-weight: 600;
+}
+
+.home p span {
+  color: var(--primary-color-500);
+}
+
+.home a {
+  margin-bottom: 6rem;
 }
 
 
