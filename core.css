@@ -19,6 +19,7 @@ navbar
 ---------*/
 
 .navbar {
+  position: relative;
   height: 6rem;
   width: 100%;
   background-color: var(--bg-color-500);
@@ -26,6 +27,12 @@ navbar
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: var(--transition);
+}
+
+.fixed-nav {
+  position: sticky;
+  top: 0;
 }
 
 .nav-btn {
@@ -143,7 +150,7 @@ navbar
 end of navbar
 ---------*/
 /*---------
-navbar
+home
 ---------*/
 
 .home {
@@ -160,7 +167,7 @@ navbar
 }
 
 .home h1 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-transform: capitalize;
   background-image: linear-gradient(to top, var(--primary-color-500) 0%, #fff 100%);
   -webkit-background-clip: text;
@@ -173,7 +180,7 @@ navbar
 
 .home p {
  font-size: .8rem;
- font-weight: 600;
+ font-weight: 500;
 }
 
 .home p span {
@@ -181,7 +188,28 @@ navbar
 }
 
 .home a {
-  margin-bottom: 6rem;
+  margin-bottom: 7rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 0rem .75rem;
+  border-radius: 4px;
+  margin-top: .5rem;
+  font-size: 1rem;
+  background-color: var(--primary-color-500);
 }
 
+/*---------
+end of home
+---------*/
+/*---------
+video
+---------*/
 
+.video {
+  height: 150vh;
+  background-color: var(--bg-color-500);
+}
+
+/*---------
+end of video
+---------*/
