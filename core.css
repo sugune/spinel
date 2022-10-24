@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -12,6 +11,10 @@
   --primary-color-400: #14FFEC;
   --color: #fff;
   --transition: all 300ms ease-in-out;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 /*---------
@@ -57,6 +60,10 @@ navbar
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+.nav-logo i {
+  font-size: 1.3rem;
 }
 
 .nav-menu {
@@ -194,8 +201,31 @@ home
   padding: 0rem .75rem;
   border-radius: 4px;
   margin-top: .5rem;
-  font-size: 1rem;
+  font-size: .9rem;
   background-color: var(--primary-color-500);
+  position: relative;
+  z-index: 1;
+}
+
+.home a:hover {
+  color: #000;
+}
+
+.home a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 100%;
+  border-radius: 4px;
+  transition: var(--transition);
+  background-color: var(--primary-color-400);
+  z-index: -1;
+}
+
+.home a:hover::before {
+  right: 0;
 }
 
 /*---------
