@@ -248,7 +248,7 @@ video
 ---------*/
 
 .video {
-  height: 150vh;
+  height: calc(100vh - 6rem);
   background-color: var(--bg-color-500);
 }
 
