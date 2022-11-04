@@ -22,16 +22,16 @@
         
         <ul class="nav-menu">
           <li class="nav-list">
-            <a href="#" class="nav-link">home</a>
+            <a href="#home" class="nav-link">home</a>
           </li>
           <li class="nav-list">
-            <a href="#" class="nav-link">video</a>
+            <a href="#video" class="nav-link">video</a>
           </li>
           <li class="nav-list">
-            <a href="#" class="nav-link">about</a>
+            <a href="#about" class="nav-link">about</a>
           </li>
           <li class="nav-list">
-            <a href="#" class="nav-link">participants</a>
+            <a href="#participants" class="nav-link">participants</a>
           </li>
         </ul>
         
@@ -47,37 +47,37 @@
     <!-- end of nav -->
     <!-- home-->
     
-    <div class="home">
+    <div class="home" id="home">
       <h1>the beginning of after</h1>
       <p>a film created by section <span>spinel</span></p>
       <p class="p">"could it still called love if it's prevailing"</p>
-      <a href="#">watch</a>
+      <a href="#video" class="watch">watch</a>
     </div>
     <!-- end of home -->
     
     <!-- video -->
-    <div class="video">
-      <h1>video</h1>
+    <div class="video" id="video">
       <div class="video-container">
-        <div class="video-image">
-          <img src="./images/temp-img.jpg" alt="" />
-        </div>
-        
-        <div class="video-context">
-          <h2>the beginning of after</h2>
-          <p>"could it still called love if it's prevailing"</p>
-          
-          <p>
-            a film about the about of about is about 
-            and about of an about and about a about 
-            of about and about in about of and are 
-            the abouts of the baouts
-          </p>
-        </div>
-        
+        <h2>the beginning of after</h2>
+        <video controls class="video-video">
+          <source src="./video/jessica.mp4" type="video/mp4"/>
+        </video>
+        <p>"could it still called love if it's prevailing"</p>
       </div>
     </div>
     <!-- end of video -->
+    
+    <!-- about -->
+    <div class="about" id="about">
+      
+    </div>
+    <!-- end of about -->
+    
+    <!-- participants -->
+    <div class="participants" id="participants">
+      
+    </div>
+    <!-- end of participants -->
     
     <script src="./mech.js"></script>
   </body>
