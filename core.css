@@ -166,7 +166,7 @@ home
 ---------*/
 
 .home {
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
   background-color: var(--bg-color-400);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.8) 100%), url('./images/poster.jpg');
   background-position: center;
@@ -179,7 +179,7 @@ home
 }
 
 .home h1 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
   background-image: linear-gradient(to top, var(--primary-color-500) 0%, #fff 100%);
   -webkit-background-clip: text;
@@ -252,7 +252,7 @@ video
 ---------*/
 
 .video {
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
   background-color: var(--bg-color-500);
   /*
   background: var(--bg-color-500) url('./images/design.svg') 50% 70% / 70% no-repeat;*/
@@ -265,9 +265,8 @@ video
   width: 90%;
   height: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .video-container h2 {
@@ -279,7 +278,6 @@ video
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   border-bottom: 1px solid var(--primary-color-500);
-  margin-top: 5rem;
 }
 
 .video-video {
@@ -307,8 +305,51 @@ about
 ---------*/
 
 .about {
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
   background-color: var(--bg-color-500);
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about h1 {
+  text-transform: capitalize;
+  background-image: linear-gradient(
+  to bottom,
+  var(--bg-color-400) 0%,
+  var(--primary-color-400) 100%
+  );
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.about p {
+  width: 90%;
+  max-width: 650px;
+  font-size: .7rem;
+  text-align: center;
+  color: #FFF5E4;
+  color: #B2B2B2 ;
+}
+
+.about p:nth-of-type(1) {
+  margin-top: 3rem;
+}
+.about p:nth-of-type(2) {
+  margin-top: 1rem;
+}
+.about p:nth-of-type(3) {
+  margin-top: 1rem;
+}
+.about p:nth-of-type(4) {
+  margin-top: 1rem;
+}
+.about p:nth-of-type(5) {
+  margin-top: 1rem;
 }
 
 /*---------
@@ -320,8 +361,54 @@ participants
 ---------*/
 
 .participants {
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
   background-color: var(--bg-color-500);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.participants h1 {
+  text-transform: capitalize;
+  background-image: linear-gradient(
+  to bottom,
+  var(--bg-color-400) 0%,
+  var(--primary-color-400) 100%
+  );
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; 
+}
+
+.participants-container {
+  width: 90%;
+  max-width: 650px;
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 450px) {
+  .participants-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.participants-item {
+  text-transform: capitalize;
+  list-style: none;
+  color: #b2b2b2;
+  font-size: .7rem;
+  background-image: linear-gradient(
+  to top, 
+  var(--bg-color-400) 0%,
+  var(--primary-color-500) 100%
+  );
+  padding: 2rem 1rem;
+  border-radius: 10px;
 }
 
 /*---------
